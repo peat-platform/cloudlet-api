@@ -1,5 +1,5 @@
 {
-  "name": "cloudlet_api",
+  "name": "cloudlet-api",
   "description": "Cloudlet Administration API for the PEAT Cloudlet Platform",
   "version": "0.1.0",
   "homepage": "http://www.peat-platform.org/",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:peat-platform/cloudlet_api.git"
+    "url": "git@github.com:peat-platform/cloudlet-api.git"
   },
   "main": "lib/main",
   "engines": {
