@@ -24,7 +24,7 @@
     "peat-logger": "peat-platform/peat-logger",
     "cloudlet-utils": "peat-platform/cloudlet-utils",
     "jsonwebtoken": "3.2.0",
-    "openi_rrd": "peat-platform/openi_rrd"
+    "peat-rrd": "peat-platform/peat-rrd"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
