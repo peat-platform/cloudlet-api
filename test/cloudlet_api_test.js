@@ -1,10 +1,10 @@
 'use strict';
 
 var base_path          = require('./basePath.js');
-var openi_cloudlet_api = require(base_path + '../lib/helper.js');
+var peat_cloudlet_api = require(base_path + '../lib/helper.js');
 
 
-openi_cloudlet_api.init({
+peat_cloudlet_api.init({
    'path'     : 'build/data_api',
    'log_level': 'debug',
    'as_json'  : false
@@ -54,7 +54,7 @@ exports['testProcessMongrel2'] = {
          }
       }
 
-      var actual = openi_cloudlet_api.processMongrel2Message(testInput);
+      var actual = peat_cloudlet_api.processMongrel2Message(testInput);
 
 
       test.equals('CREATE',      actual.dao_actions[0].action,                "should be 'CREATE'"     )
@@ -82,7 +82,7 @@ exports['testProcessMongrel2'] = {
          }
       }
 
-      var actual = openi_cloudlet_api.processMongrel2Message(testInput)
+      var actual = peat_cloudlet_api.processMongrel2Message(testInput)
 
       test.equals('DELETE',      actual.dao_actions[0].action,                "should be 'DELETE'"     )
       test.equals(true,          actual.mongrel_resp.value,                   "should be true"         )
@@ -112,7 +112,7 @@ exports['testProcessMongrel2'] = {
 
 
 
-      var actual = openi_cloudlet_api.processMongrel2Message(testInput);
+      var actual = peat_cloudlet_api.processMongrel2Message(testInput);
 
 
       test.equals('FETCH',       actual.dao_actions[0].action,                "should be 'FETCH'"     )
@@ -141,7 +141,7 @@ exports['testProcessMongrel2'] = {
          }
       }
 
-      var actual = openi_cloudlet_api.processMongrel2Message(testInput);
+      var actual = peat_cloudlet_api.processMongrel2Message(testInput);
 
       test.equal(actual, null)
 
